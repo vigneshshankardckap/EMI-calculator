@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-left: 120px;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    background: rgb(0, 165, 163);
+    font-family: 'sans-serif';
+}
+
+.calculator {
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(1, 0, 5, 0.15);
+}
+
+.input-field h2 {
+    font-size: 28px;
+    color: rgb(0, 136, 133);
+}
+
+label {
+    color: rgb(0, 136, 133);
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+
+}
+
+.calculator .input-field {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px 0px;
+
+}
+
+.calculator-input {
+    position: relative;
+    width: 50%;
+    padding: 5px 10px;
+    display: block;
+
+}
+
+li {
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    border: 1px solid;
+    border-color:rgb(179, 179, 179); 
+    margin-top: 17px;
+    border-radius: 2px;
+}
+
+span {
+    font-size: 22px;
+    margin-left: 10px;
+    color: rgb(101, 202, 0);
+}
+
+.claculator-btn {
+    margin-left: 18px;
+    height: 36px;
+    width: 171px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(0, 136, 133);
+    margin-top: 40px;
+}
+
+.claculator-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(0, 136, 133);
+    border-color: rgb(0, 136, 133);
+}
+
+input {
+    padding: 8px 8px 5px 10px;
+    border-radius: 4px;
+    margin-left: 142px;
+    font-size: 18px;
+    border-color: rgb(0, 136, 133);
+}
+input:focus{
+    outline: none;
+    box-shadow: rgb(48, 116, 114) 0px 15px 25px -10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+
+}
+
+.monthoryear {
+    position: relative;
+    bottom: 83px;
+    left: 401px;
+    height: 38px;
+    width: 80px;
+    border-color: rgb(0, 136, 133);
+    font-size: 17px;
+    color: rgb(0, 136, 133);
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.acc{
+    background-color: rgb(0, 136, 133) ;
+    color: white;
+}
