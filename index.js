@@ -49,8 +49,11 @@ monthbtn.addEventListener("click", () => {
 btn.addEventListener("click", () => {
 
     if (amount.value !="" && peroid.value !="" && interest.value !="") {
+        if(peroid.value == 0 && interest.value ==0){
+            alert("please enter the value greater than 0")
+        }
         
-        if (yearbtn.classList.contains("acc")) {
+        else  if (yearbtn.classList.contains("acc")) {
             let p = amount.value;
             //how many monthh or year you can payable 
             let n = peroid.value * 12;
@@ -97,6 +100,9 @@ btn.addEventListener("click", () => {
             let totalinterest = totalamount - p
             loaninterest.innerText = "₹" + Math.round(totalinterest).toLocaleString()
         }
+    }
+    else{
+        alert("please the value ")
     }
 })
 
